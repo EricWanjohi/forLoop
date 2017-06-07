@@ -1,0 +1,20 @@
+.inputs {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+  height: 35px;
+}
+
+.click {
+  background-color: #009999;
+  width: 20%;
+  height: 40px;
+  color: white;
+  border-radius: 4px;
+  border: 0px;
+}
+
+#holder {
+  align-self: center;
+  border-style: outset;
+}

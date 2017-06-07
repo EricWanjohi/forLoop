@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <title>favouriteThings</title>
+</head>
+
+<body class="body">
+
+  <div class="container-fluid">
+    <div class="container" id="favouriteThings">
+      <h2 id="heading">Fill in the form below</h2>
+      <form class="form" action="index.html" method="post">
+        <input type="text" name="food" placeholder="Favourite food" required="" id="food"><br>
+        <input type="text" name="car" placeholder="Favourite car model" required="" id="car"><br>
+        <input type="text" name="book" placeholder="Favourite book" required="" id="book"><br>
+        <input type="text" name="movies" placeholder="Favourite movie" required="" id="movie"><br>
+        <button type="button" name="button" class="btn click" id="buttn">
+                Submit
+              </button>
+      </form>
+    </div>
+
+  </div>
+
+
+  <script type="text/javascript">
+    // In readiness for the html document page load...
+    $(document).ready(function() {
+      // Creating an Onclick button event...
+      $(".click").click(function() {
+        // Creating variables for entries made...
+        var food = $("#food").val();
+        var car = $("#car").val();
+        var book = $("#book").val();
+        var movies = $("#movie").val();
+
+        var favorite = [food,
+          car, book, movies
+        ];
+
+
+        alert("Your favourite food is " +
+          food + ", favourite car model is " +
+          car + ", favourite book is " +
+          book + ", favourite movie is " + movies + ".");
+      });
+
+    });
+
+  </script>
+</body>
+
+</html>
